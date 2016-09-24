@@ -1,8 +1,8 @@
 
 
-<h1>Cats!</h1>
+<h1>Burgers!</h1>
 
-<h2>Cats that are not sleepy!</h2>
+<h2>Burgers to eat!</h2>
 
 <ul>
   {{#each burger}}
@@ -12,10 +12,10 @@
 
         <form action="burger/update/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="devoured" value="true">
-          <button type="submit">Lets Ea!</button>
+          <button type="submit">Lets Eat!</button>
         </form>
 
-        {{> burger/delete-burger}}
+        
       </li>
     {{/unless}}
   {{/each}}
@@ -34,7 +34,7 @@
           <button type="submit">Im Full!</button>
         </form>
 
-        {{> burger/delete-burger}}
+        
       </li>
     {{/if}}
   {{/each}}
